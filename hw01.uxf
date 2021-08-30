@@ -1,0 +1,37 @@
+<diagram program="umletino" version="14.3.0"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>480</x><y>140</y><w>260</w><h>110</h></coordinates><panel_attributes>template=ItemType
+&lt;&lt;thiing&gt;&gt;
+BoxInterface
+--
++GetItem() const: ItemType
++SetItem(item: const ItemType&amp;): void
++~BoxInterface()
+bg=#90ee90</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>440</x><y>340</y><w>330</w><h>150</h></coordinates><panel_attributes>template=ItemType
+&lt;&lt;thing&gt;&gt;
+PlainBox
+--
+-item_: ItemType
+--
++PlainBox(theItem: const ItemType&amp; = ItemType{})
++GetItem() const override: ItemType
++SetItem(theItem: const ItemType&amp;) override: void
++~PlainBox() override = default
+bg=#90ee90</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>580</x><y>240</y><w>30</w><h>130</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;10;10;110</additional_attributes></element><element><id>UMLClass</id><coordinates><x>240</x><y>620</y><w>330</w><h>140</h></coordinates><panel_attributes>template=ItemType
+&lt;&lt;thing&gt;&gt;
+ToyBox
+--
+-boxColor: Color
+--
++ToyBox()
++ToyBox(theItem: const ItemType&amp;)
++ToyBox(theColor: const Color&amp;)
++GetColor() const: Color
+bg=#90ee90</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>680</x><y>620</y><w>320</w><h>130</h></coordinates><panel_attributes>template=ItemType
+&lt;&lt;thing&gt;&gt;
+MagicBox
+--
+-firstItemStored: bool
+--
++MagicBox()
++MagicBox(theItem: const ItemType&amp;)
++SetItem(theItem: const Item&amp;) override: void
+bg=#90ee90</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>380</x><y>480</y><w>230</w><h>170</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>210;10;210;70;10;70;10;150</additional_attributes></element><element><id>Relation</id><coordinates><x>580</x><y>480</y><w>260</w><h>170</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;70;240;70;240;150</additional_attributes></element></diagram>
