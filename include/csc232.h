@@ -51,30 +51,7 @@ using std::setprecision;
  */
 namespace csc232
 {
-    // TODO: Implement the Ackermann function within this namespace.
-    /**
-     * @brief An implementation of the Ackermann function.
-     * 
-     * @param m the first parameter of the function
-     * @param n the second paremeter of the function
-     * @pre    m >= 0 && n >= 0;
-     * @return a value computed by the Ackermann function definition.
-     */
-    int acker(int m, int n)
-    {
-        if ( m == 0 )
-        {
-            return n + 1;
-        }
-        if ( n == 0 )
-        {
-            return acker( m - 1, 1 );
-        }
-        else
-        {
-            return acker( m - 1, acker( m , n - 1 ) );
-        }
-    }
+    // TODO: Implement the Ackermann function within this namespace below
 
     // DO NOT Modify anything below this line
 
