@@ -7,25 +7,10 @@
  * @brief   Entry point of hw01-demo target.
  */
 
-#include "car.h"
+#include "csc232.h"
 
 int main ( )
 {
     std::cout << "Hello, Demo!" << std::endl;
-
-    Car car("Dodge", "Ram 1500");
-    std::cout << "Taking my " << car.GetMake() << " " << car.GetModel() << " out for a ride..." << std::endl;
-    car.Start( );
-    car.ChangeGear( Gear::D );
-    car.Drive( );
-    car.Brake( );
-    car.Stop( );
-    car.Turn( Direction::Left );
-    car.Drive( );
-    car.Brake( );
-    car.Stop( );
-    car.ChangeGear( Gear::P );
-    car.TurnOff( );
-
     return EXIT_SUCCESS;
 }
