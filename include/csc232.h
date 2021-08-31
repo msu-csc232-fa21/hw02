@@ -51,11 +51,38 @@ using std::setprecision;
  */
 namespace csc232
 {
+    // TODO: Implement the Ackermann function within this namespace.
+    /**
+     * @brief An implementation of the Ackermann function.
+     * 
+     * @param m the first parameter of the function
+     * @param n the second paremeter of the function
+     * @pre    m >= 0 && n >= 0;
+     * @return a value computed by the Ackermann function definition.
+     */
+    int acker(int m, int n)
+    {
+        if ( m == 0 )
+        {
+            return n + 1;
+        }
+        if ( n == 0 )
+        {
+            return acker( m - 1, 1 );
+        }
+        else
+        {
+            return acker( m - 1, acker( m , n - 1 ) );
+        }
+    }
+
+    // DO NOT Modify anything below this line
+
     /**
      * @brief Generate a quasi-random UUID.
      * @return A string representation of a quasi-random UUID.
      */
-    inline std::string GenerateUuid ( )
+    std::string GenerateUuid ( )
     {
         static std::random_device random_device;
         static std::mt19937 random_number_generator( random_device( ) );
