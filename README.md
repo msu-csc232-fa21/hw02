@@ -1,4 +1,4 @@
-# HW02 - Slay the Nemean Lion
+# HW02 - Slay the Lernaean Hydra
 
 Driven mad by CSC131, the Student smashed their laptop.
 
